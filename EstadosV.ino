@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=bl2k6eXDAGM&t=2186s&ab_channel=JesusCorrea-PLC
+
 //Declarando variables
 
 volatile int contador = 0;   //Contador de pulsos
