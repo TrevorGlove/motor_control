@@ -1,6 +1,6 @@
 # esp32-control
 
-Aqui se muestra Control PID y Control por Retroalimentación de Estados de Velocidad y Posición con encoder de un motor con el ESP32.
+Aqui se muestra Control PID y Control por Retroalimentación de Estados de Velocidad y Posición con encoder de un motor 12V130RPM  con el ESP32.
 
 Módulos utilizados:
 - Driver L298N.
