@@ -1,3 +1,5 @@
+
+//@TrevorGlove
 //Declarando variables
 
 volatile int contador = 0;   //Contador de pulsos
