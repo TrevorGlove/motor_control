@@ -20,9 +20,9 @@ float e; //e(n)
 float e1; //e(n-1)
 float e2; //e(n-2)
 
-//float Kp = 6;
-//float Ki = 1;
-//float Kd = 1;
+float Kp = 6;
+float Ki = 1;
+float Kd = 1;
 float Ts = 0.1;
 
 //PID
@@ -38,9 +38,6 @@ float Ts = 0.1;
 //float q0 = Kp;
 //float q1 = -Kp+Ki*Ts;
 
-float q0 = 1.458;
-float q1 = 0.5521;
-float q2 = -0.9039;
 
 const int PinENA = 19;  //Pin ENA del L298N
 const int PinIN1 = 18; //Pin IN1 del L298N
