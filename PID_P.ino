@@ -37,14 +37,14 @@ float Ts = 0.1;
 //float q0 = Kp;
 //float q1 = -Kp+Ki*Ts;
 
+//Tambien se puede usar valores auxiliares
+
 const int PinENA = 19;  //Pin ENA del L298N
 const int PinIN1 = 18; //Pin IN1 del L298N
 const int PinIN2 = 5; //Pin IN2 del L298N
 const int PinA = 15; //pinA del encoder
 const int PinB = 2; //PinB del encoder
 const int PinPOT = 34; //Salida del potenciómetro  
-
-
 
 void setup(){
   Serial.begin(115200);
@@ -64,14 +64,15 @@ void loop() {
     gr = contador * 360.0 / pv;
 
     // ----- Definiendo el setpoint -----//
-
     
     pot = analogRead(PinPOT);
     sp = map(pot,0, 4095,-360, 360);
     e = sp - gr;
 
     //----- Control PID ------//
-    c = c2 + q0*e + q1*e1 + q2*e2;
+
+    
+    c = c1 + q0*e + q1*e1 + q2*e2;
     //PD 
     //c = q0*e + q1*e1;
     //PI 
