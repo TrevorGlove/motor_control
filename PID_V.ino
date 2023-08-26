@@ -20,10 +20,12 @@ float e; //e(n)
 float e1; //e(n-1)
 float e2; //e(n-2)
 
-float Kp = 6;
-float Ki = 1;
-float Kd = 1;
-float Ts = 0.1;
+
+//Valores Kp, Ki, Kd
+//float Kp = 6;
+//float Ki = 1;
+//float Kd = 1;
+//float Ts = 0.1;
 
 //PID
 //float q0 = Kp + Kd/Ts;
@@ -38,6 +40,10 @@ float Ts = 0.1;
 //float q0 = Kp;
 //float q1 = -Kp+Ki*Ts;
 
+//Valores auxilizares por transformacion PID de A/D
+float q0 = 1.458;
+float q1 = 0.5521;
+float q2 = -0.9039;
 
 const int PinENA = 19;  //Pin ENA del L298N
 const int PinIN1 = 18; //Pin IN1 del L298N
@@ -73,9 +79,11 @@ void loop() {
     sp = map(pot, 0, 4095, -45, 45); //0 - 4095 a -45 - 45 rpm 
     e = sp - rpm;   // e(n) = r(n) - y(n)
 
-    //----- Control PID ------//  
+    //----- Control PID ------ A/D// 
     c = c2 + q0*e + q1*e1 + q2*e2;
 
+    //PID
+    c = c1 + q0*e + q1*e1 + q2*e2;
     //PD 
     //c = q0 * e + q1 * e1;
     //PI
