@@ -25,7 +25,7 @@ float e2; //e(n-2)
 //float Kp = 6;
 //float Ki = 1;
 //float Kd = 1;
-//float Ts = 0.1;
+float Ts = 0.1;
 
 //PID
 //float q0 = Kp + Kd/Ts;
