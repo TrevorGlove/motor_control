@@ -1,4 +1,4 @@
-# @L298N
+# @TrevorGlove
 
 from machine import Pin, ADC, Timer
 from L298N import L298N
