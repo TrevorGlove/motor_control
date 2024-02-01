@@ -1,10 +1,10 @@
 # esp32-control
 
-Aqui se muestra Control PID y Control por Retroalimentación de Estados (Privado ahora) de Velocidad y Posición con encoder de un motor de 12V 130RPM  con el ESP32 en ArduineIDE.
+Aqui se muestra Control PID y Control por Retroalimentación de Estados de Velocidad y Posición de un motor de 12V 130RPM  con el ESP32. Está en C para Arduino IDE.
 
 Módulos utilizados:
 - Driver L298N.
-- Sensor ACS712 (25A, aunque se recomienda 5A)
+- Sensor ACS712 (se recomienda 5A)
 - Sensor FZ0430.
 
 # Raspberry-Pi-Pico-control
