@@ -1,4 +1,4 @@
-// @TrevorGuante
+// @TrevorGlove https://github.com/TrevorGlove/motor_control
 
 //Declarando variables
 
