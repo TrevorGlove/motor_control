@@ -1,4 +1,4 @@
-# esp32-control
+# Esp32-control
 
 Aqui se muestra Control PID y Control por Retroalimentación de Estados de Velocidad y Posición de un motor de 12V 130RPM  con el ESP32. Está en C para Arduino IDE.
 
@@ -12,7 +12,7 @@ Módulos utilizados:
 Control PID realizado en micropython. 
 
 
-# Proximamente
+# Próximamente
 - Observador de Estados en C++ (en especial para sensar voltaje de motor ya que el modulo sensor no es eficiente por polaridad)
 - Control Fuzzy en micropython (El problema de aqui es la cantidad de procesamiento matemático que ejecuta el código que hay que optimizar)
 
