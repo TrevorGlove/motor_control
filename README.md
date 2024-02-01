@@ -4,14 +4,13 @@ Módulos utilizados:
 - Driver L298N.
 - Sensor ACS712 (se recomienda 5A)
 - Sensor FZ0430.
-- 
 Retroalimentación de Estados: Se debe realizar un modelo en espacio de estados para determinar las ganancias de retroalimentación.
 
-# Control-de-motor-DC-(C++)
+# Control de motor DC (C++)
 Control PID y Control por Retroalimentación de Estados de Velocidad y Posición en lenguaje C++ para Arduino IDE.
 Los pines estan configurados para ESP32. 
 
-# Control-de-motor-DC-(Micropython)
+# Control de motor DC (Micropython)
 Control PID de Estados de Velocidad y Posición en micropython.
 Los pines estan configurados para Raspberrry Pi Pico.
 
