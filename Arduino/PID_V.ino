@@ -1,4 +1,5 @@
-// @TrevorGuante
+// @TrevorGlove https://github.com/TrevorGlove/motor_control
+// Elaborado para ESP32
 
 //Declarando variables
 
