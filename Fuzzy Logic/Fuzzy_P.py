@@ -137,9 +137,7 @@ tim.init(period=int(Ts * 1000), mode=Timer.PERIODIC, callback=Fuzzyficator)
 
 
 while True:
-
     pot = adc.read_u16()
-    
     motor1.speed(c)
 
 
