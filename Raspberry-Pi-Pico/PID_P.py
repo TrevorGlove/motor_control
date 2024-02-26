@@ -1,4 +1,5 @@
-# @TrevorGlove  https://github.com/TrevorGlove/motor_control
+// @TrevorGlove https://github.com/TrevorGlove/motor_control
+// Elaborado para Raspberry Pi Pico
 
 from machine import Pin, ADC, Timer
 from L298N import L298N
