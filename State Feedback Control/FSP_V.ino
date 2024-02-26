@@ -1,4 +1,7 @@
+// @TrevorGlove https://github.com/TrevorGlove/motor_control
+// Elaborado para ESP32
 
+//Declarando variables
 
 volatile int contador = 0;   //Contador de pulsos
 
@@ -14,7 +17,6 @@ int x1; //Variable x1 de estado
 int x2; //Variable x2 de estado
 
 int e;  //r(n) = x(n)- y(n)
-int e1 = 0; //e(n-1)
 float v; //v(n)
 float v1; //v(n-1)
 float c; //c(n)
