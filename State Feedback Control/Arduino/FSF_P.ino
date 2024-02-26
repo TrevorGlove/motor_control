@@ -1,4 +1,6 @@
-//@TrevorGlove
+// @TrevorGlove https://github.com/TrevorGlove/motor_control
+// Elaborado para ESP32
+
 //Declarando variables
 
 volatile int contador = 0;   //Contador de pulsos
@@ -23,6 +25,7 @@ float v; //v(n)
 float v1; //v(n-1)
 float c; //c(n)
 
+float K = 1.005;
 float K1 = 5.279;
 float K2 = 8.2245;
 float K3 = -10.4882;
@@ -75,7 +78,7 @@ void loop() {
 
     //----- Retroalimentación ------//
     e = sp - rev;  
-    c = e*K1 - x2*K2 - x3*K3;
+    c = e*K - x1*K1 -x2*K2 - x3*K3;
  
   }  
 
