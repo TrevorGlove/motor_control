@@ -1,4 +1,4 @@
-Este repositorio tiene códigos para implementar controladores para motor DC con microcontrolador. Los valores utilizados están calibrados segun el enconder y especificaciones técnicas del motor utilizado.
+Este repositorio contiene códigos para implementar controladores para motor DC con microcontrolador. Los valores utilizados están calibrados segun el enconder y especificaciones técnicas del motor utilizado.
 
 Módulos utilizados:
 - Driver L298N.
