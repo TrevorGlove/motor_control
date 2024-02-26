@@ -5,6 +5,10 @@ Módulos utilizados:
 - Currente Sensor (ACS712 / 5A)
 - Hall Sensor (Encoder)
 
+## FuzzyLib
+Librería en micropython para implementar una lógica difusa. Las funciones contenidas estan diseñadas para no utlizar linspace debido al tiempo de procesamiento (mayor a 100 ms) lo cual no es recomendable para control de estos sistemas. Por ello se recomienda definir los universos de entrada correctamente.
+Tomar en cuenta que en la función Defuzzy(membership_out, universe, n), si se está usando un linspace, por lo que hay que equilibrar entre calidad de precisión y tiempo de procesamiento (con valor de 50 se llega a 20 ms aprox).
+
 ## Próximamente
 - Observador de Estados en C++ (Arduino) (en especial para sensar corriente de motor cuando el sensor no es eficiente)
 - Control Fuzzy (El problema de aqui es la cantidad de procesamiento matemático que ejecuta el código que hay que optimizar)
