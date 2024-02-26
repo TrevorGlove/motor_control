@@ -1,3 +1,4 @@
+
 def Rules(rules, *args):
     for rule in rules:
         if rule[:-1] == args:
