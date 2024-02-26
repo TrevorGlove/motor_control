@@ -1,3 +1,8 @@
+"""
+@TrevorGlove https://github.com/TrevorGlove/motor_control
+Elaborado para Raspberry Pi Pico
+Librería para Logica Difusa
+"""
 
 def Rules(rules, *args):
     for rule in rules:
