@@ -11,8 +11,7 @@ Tomar en cuenta que en la función Defuzzy(membership_out, universe, n), si se e
 
 ## Próximamente
 - Observador de Estados en C++ (Arduino) (en especial para sensar corriente de motor cuando el sensor no es eficiente)
-- Control Fuzzy (El problema de aqui es la cantidad de procesamiento matemático que ejecuta el código que hay que optimizar)
-
+- DQN (Aprendizaje por refuerzo)
 
 ## Fuentes:
 - El código de PID  de Velocidad me basé en el siguiente video: https://www.youtube.com/watch?v=bl2k6eXDAGM&t=2186s&ab_channel=JesusCorrea-PLC.
