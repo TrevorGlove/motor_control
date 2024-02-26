@@ -2,7 +2,7 @@ Este repositorio tiene códigos para implementar controladores para motor DC con
 
 Módulos utilizados:
 - Driver L298N.
-- Currente Sensor (ACS712 / 5A)
+- Currente Sensor (Ejemplo: ACS712 / 5A)
 - Hall Sensor (Encoder)
 
 ## FuzzyLib
