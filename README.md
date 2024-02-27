@@ -2,7 +2,7 @@ Este repositorio contiene códigos y librerías para implementar controladores p
 
 Módulos utilizados:
 - Driver L298N.
-- Currente Sensor (Ejemplo: ACS712 / 5A)
+- Current Sensor (Ejemplo: ACS712 / 5A)
 - Hall Sensor (Encoder)
 
 ## FuzzyLib
