@@ -7,7 +7,7 @@ Módulos utilizados:
 
 ## FuzzyLib
 Librería en micropython para implementar una lógica difusa. Las funciones contenidas estan diseñadas para no utlizar linspace debido al tiempo de procesamiento (mayor a 100 ms en tamaños mayores a 50 aprox) lo cual no es recomendable para control de este sistema. Por ello, se recomienda definir las funciones de membresia de entrada correctamente para que la libreria reconosca los extremos como universos correctamente.
-Tomar en cuenta que en la función _Defuzzy(membership_out, universe, n)_ se está usando un linspace de tamaño _n_, por lo que hay que equilibrar entre calidad de precisión y tiempo de procesamiento (con valor de 50 se llega a 20 ms aprox).
+Tomar en cuenta que en la función _Defuzzy(membership_out, universe, n)_ se está usando un linspace de tamaño _n_, por lo que hay que equilibrar entre calidad de precisión y tiempo de procesamiento (n = 50 se llega a 20 ms aprox).
 
 ```python
 def Defuzzy(membership_out, universe, n):
