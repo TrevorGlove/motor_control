@@ -9,6 +9,33 @@ Módulos utilizados:
 Librería en micropython para implementar una lógica difusa. Las funciones contenidas estan diseñadas para no utlizar linspace debido al tiempo de procesamiento (mayor a 100 ms en tamaños mayores a 50 aprox) lo cual no es recomendable para control de este sistema. Por ello, se recomienda definir las funciones de membresia de entrada correctamente para que la libreria reconosca los extremos como universos correctamente.
 Tomar en cuenta que en la función _Defuzzy(membership_out, universe, n)_, si se está usando un linspace de tamaño _n_, por lo que hay que equilibrar entre calidad de precisión y tiempo de procesamiento (con valor de 50 se llega a 20 ms aprox).
 
+```python
+def Defuzzy(membership_out, universe, n):
+    num_functions = len(membership_out)
+    
+    sumy = 0.0
+    sumy_x = 0.0
+    
+    delta_x = (universe[1] - universe[0]) / n 
+    
+    for i in range(n):
+        x = universe[0] + i * delta_x 
+        
+        max_value = 0.0
+        
+        for membresia in membership_out.values():
+            mf_value = Trapzmf(x, membresia)
+            max_value = max(max_value, mf_value)
+        
+        sumy += max_value
+        sumy_x += max_value * x
+    
+    if sumy == 0:
+        return 0.0  
+    else:
+        return sumy_x / sumy
+```
+
 ## Próximamente
 - Observador de Estados en C++ (Arduino) (en especial para sensar corriente de motor cuando el sensor no es eficiente)
 - DQN (Aprendizaje por refuerzo)
