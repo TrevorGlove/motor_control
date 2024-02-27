@@ -11,13 +11,8 @@ Tomar en cuenta que en la función _Defuzzy(membership_out, universe, n)_, si se
 
 ```python
 def Defuzzy(membership_out, universe, n):
-    num_functions = len(membership_out)
-    
-    sumy = 0.0
-    sumy_x = 0.0
-    
-    delta_x = (universe[1] - universe[0]) / n 
-    
+    ...
+    # Se establece la defuzificación por método de centroide
     for i in range(n):
         x = universe[0] + i * delta_x 
         
