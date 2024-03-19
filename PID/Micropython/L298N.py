@@ -1,11 +1,10 @@
 from machine import Pin, PWM
 
 class L298N:
-    def __init__(self, in1_pin, in2_pin, ena_pin, motor_num):
+    def __init__(self, in1_pin, in2_pin, ena_pin):
         self.in1 = Pin(in1_pin, Pin.OUT)
         self.ena = Pin(ena_pin, Pin.OUT)
         
-        self.motor_num = motor_num
         self.pwm = PWM(self.ena)
         
         self.speed(0)
