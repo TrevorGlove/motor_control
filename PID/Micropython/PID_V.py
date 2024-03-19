@@ -86,7 +86,7 @@ B = Pin(Pin_Encoder["B"], Pin.IN)
 A.irq(trigger=Pin.IRQ_RISING, handler=interrupcion)
 
 # Control de motor
-motor1 = L298N(Pin_L298N["IN1"], Pin_L298N["IN2"], Pin_L298N["ENA"], motor_num=1)
+motor1 = L298N(Pin_L298N["IN1"], Pin_L298N["IN2"], Pin_L298N["ENA"])
 
 # Interrucpión por Timer
 tim = Timer()
