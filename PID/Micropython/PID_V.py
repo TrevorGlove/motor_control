@@ -1,6 +1,6 @@
 """
 @TrevorGlove https://github.com/TrevorGlove/motor_control
-Elaborado para Raspberry Pi Pico
+Elaborado para Raspberry Pi Pico and ESP32
 """
 
 from machine import Pin, ADC, Timer
