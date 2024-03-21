@@ -4,7 +4,6 @@ class L298N:
     def __init__(self, in1_pin, in2_pin, ena_pin):
         self.in1 = Pin(in1_pin, Pin.OUT)
         self.ena = Pin(ena_pin, Pin.OUT)
-        
         self.pwm = PWM(self.ena)
         
         self.speed(0)
@@ -21,4 +20,7 @@ class L298N:
         value = abs(value)  
         self.pwm.freq(1000)  
         self.pwm.duty_u16(value)
+        
+        #self.pwm.duty(abs(value))  --- for ESP32
+
       
