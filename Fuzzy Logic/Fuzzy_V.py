@@ -54,11 +54,11 @@ E = [ENL, ENC, E0, EPC, EPL]
 
 # Funciones de membresía de salida
 
-DAN = (-50000, -50000, -40000, -20000)   # Data cycle Alta Negativa
-DBN = (-8000, -2000, 0)                # Data cycle Baja Negativa
-D0 = (-100, 0, 100)                  # Data cycle Cero
-DBP = (0, 2000, 8000)                  # Data cycle Baja Negativa
-DAP = (20000, 40000, 50000, 50000)       # Data cycle Alta Positiva
+DAN = (-50000, -50000, -40000, -20000)   # Data cycle Derivado Alta Negativa
+DBN = (-8000, -2000, 0)                # Data cycle Derivado Baja Negativa
+D0 = (-100, 0, 100)                  # Data cycle Derivado Cero
+DBP = (0, 2000, 8000)                  # Data cycle Derivado Baja Negativa
+DAP = (20000, 40000, 50000, 50000)       # Data cycle Derivado Alta Positiva
 
 DC = [DAN, DBN, D0, DBP, DAP]
 
