@@ -21,6 +21,6 @@ class L298N:
         self.pwm.freq(1000)  
         self.pwm.duty_u16(value)
         
-        #self.pwm.duty(abs(value))  --- for ESP32
+        #self.pwm.duty(value)  --- for ESP32
 
       
